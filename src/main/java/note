@@ -1,0 +1,9 @@
+spidder项目说明：
+主要实现：调用github查询2个接口，
+查询一段时间内的提交数据，对于返回的各个提交的仓库full地址进行次数统计；
+查询仓库地址对应的开发语言，然后针对full仓库地址----语言进行统计；
+最后目的就是通过爬虫github一段时间内的提交数据，汇总热门语言使用次数；
+
+主要实现类是GithubSpider.java;
+其中对于bean对象和json字符串间转换【即序列化&反序列化】采用gson jar包引入依赖；
+其他方法还有fastjson下的json.parseObject()&json.toJsonString(string)
